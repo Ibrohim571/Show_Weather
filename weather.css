@@ -1,0 +1,94 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Times New Roman', Times, sans-serif;
+     /* overflow-y: hidden; */
+     background-image: url(./400000200851_383284.jpg);
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;    
+}
+
+.app-wrap {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     height: 100vh;
+     background-image: linear-gradient(to bottom, rgba(220, 219, 219, 0.1), rgba(0, 0, 0, 0.4));
+}
+
+header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 50px 15px 15px;
+}
+
+header input {
+     width: 100%;
+     max-width: 280px;
+     border: none;
+     border-bottom: 3px solid rgb(109, 234, 51);
+     border-radius: 15px 0px 15px 0px;
+     background-color: rgb(243, 223, 200, 0.1);
+     padding: 10px 24px;
+     outline: none;
+     font-size: 22px;
+     letter-spacing: 3px;
+     transition: 0.3s ease-in-out;
+}
+
+header input:focus {
+     border-radius: 0px 15px 0px 15px;
+     background-color: rgb(243, 223, 200, 0.8);
+}
+
+main {
+     padding: 25px 25px 50px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     text-align: center!important;
+     color: rgb(86, 231, 86);
+}
+
+main .city {
+     font-size: 35px;
+     font-weight: 600;
+     color: rgb(24, 143, 24);
+}
+
+main .date {
+     font-size: 22px;
+     font-weight: 600;
+     color: rgb(21, 11, 227);
+}
+
+.main-temp .temp {
+     font-size: 100px;
+     font-weight: 900;
+     text-shadow: 0px 4px rgba(236, 161, 55, 0.7);
+}
+
+.main-temp .weather {
+     font-size: 35px;
+     font-weight: 600;
+     text-shadow: 0px 2px rgba(241, 151, 25, 0.7);
+}
+
+.main-temp .hi-low {
+     font-size: 20px;
+}
+
+@media (max-width: 850px) {
+     .app-wrap {
+          grid-template-columns: 100%;
+     }
+     .main-temp .temp {
+          font-size: 50px;
+     }
+}
